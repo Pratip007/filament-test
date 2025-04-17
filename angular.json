@@ -92,5 +92,13 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a27595c8-dd46-4772-927d-3be43a306148"
   }
-}
+"logs": [
+  {
+    "type": "console",
+    "output": "console.log"
+  }
+]}

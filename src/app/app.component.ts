@@ -10,9 +10,9 @@ import { CommonModule } from "@angular/common"
   imports: [RouterOutlet, SidebarComponent, HeaderComponent, CommonModule],
   template: `
     <div class="min-h-screen bg-[#08080a] text-white flex flex-col lg:flex-row">
-      <app-sidebar class="hidden lg:block"></app-sidebar>
+      <app-sidebar [isOpen]="isSidebarOpen"></app-sidebar>
       <div class="flex-1 flex flex-col">
-        <app-header></app-header>
+        <app-header (sidebarToggle)="toggleSidebar()"></app-header>
         <main class="flex-1 p-4 lg:p-6 bg-[#08080a]">
           <router-outlet></router-outlet>
         </main>
@@ -22,5 +22,9 @@ import { CommonModule } from "@angular/common"
   styles: [],
 })
 export class AppComponent {
-  title = "filament-admin"
+  isSidebarOpen = false;
+
+  toggleSidebar() {
+    this.isSidebarOpen = !this.isSidebarOpen;
+  }
 }

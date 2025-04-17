@@ -1,6 +1,6 @@
 import { Component, type OnInit } from "@angular/core"
 import { CommonModule } from "@angular/common"
-import type { DataService } from "../../services/data.service"
+import { DataService } from "../../services/data.service"
 
 interface Post {
   id: number

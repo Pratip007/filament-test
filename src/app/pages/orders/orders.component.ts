@@ -6,10 +6,10 @@ import { CommonModule } from "@angular/common"
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div>
+    <div class=" sm:m-4 lg:m-6">
       <h1 class="text-2xl font-bold mb-6">Orders</h1>
-      
-      <div class="bg-[#171717] rounded-lg p-6 flex items-center justify-center">
+
+      <div class="bg-[#171717] rounded-lg  p-6 flex items-center justify-center">
         <div class="text-center">
           <h2 class="text-xl font-medium mb-2">Orders Management</h2>
           <p class="text-gray-400 mb-4">This page is under construction</p>

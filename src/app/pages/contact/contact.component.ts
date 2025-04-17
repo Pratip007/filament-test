@@ -10,14 +10,14 @@ import { CommonModule } from "@angular/common"
     <section class="py-8">
       <div class="max-w-2xl mx-auto">
         <h1 class="text-3xl font-bold text-gray-800 mb-6">Contact Us</h1>
-        
+
         <div class="bg-white p-6 rounded-lg shadow-md">
           <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <div class="mb-4">
               <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
-              <input 
-                type="text" 
-                id="name" 
+              <input
+                type="text"
+                id="name"
                 formControlName="name"
                 class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 [ngClass]="{'border-red-500': submitted && f.name.errors}"
@@ -26,12 +26,12 @@ import { CommonModule } from "@angular/common"
                 <div *ngIf="f.name.errors.required">Name is required</div>
               </div>
             </div>
-            
+
             <div class="mb-4">
               <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-              <input 
-                type="email" 
-                id="email" 
+              <input
+                type="email"
+                id="email"
                 formControlName="email"
                 class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 [ngClass]="{'border-red-500': submitted && f.email.errors}"
@@ -41,11 +41,11 @@ import { CommonModule } from "@angular/common"
                 <div *ngIf="f.email.errors.email">Please enter a valid email address</div>
               </div>
             </div>
-            
+
             <div class="mb-4">
               <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
-              <textarea 
-                id="message" 
+              <textarea
+                id="message"
                 formControlName="message"
                 rows="5"
                 class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -56,10 +56,10 @@ import { CommonModule } from "@angular/common"
                 <div *ngIf="f.message.errors.minlength">Message must be at least 20 characters</div>
               </div>
             </div>
-            
+
             <div class="flex justify-end">
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                 [disabled]="loading"
               >
@@ -67,16 +67,16 @@ import { CommonModule } from "@angular/common"
                 <span *ngIf="!loading">Send Message</span>
               </button>
             </div>
-            
+
             <div *ngIf="success" class="mt-4 p-3 bg-green-100 text-green-700 rounded-lg">
               Your message has been sent successfully! We'll get back to you soon.
             </div>
           </form>
         </div>
-        
+
         <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
           <h2 class="text-xl font-semibold mb-4">Contact Information</h2>
-          
+
           <div class="space-y-4">
             <div class="flex items-start">
               <div class="text-blue-500 mr-3">
@@ -90,7 +90,7 @@ import { CommonModule } from "@angular/common"
                 <p class="text-gray-600">123 Angular Street, Web City, 12345</p>
               </div>
             </div>
-            
+
             <div class="flex items-start">
               <div class="text-blue-500 mr-3">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -102,7 +102,7 @@ import { CommonModule } from "@angular/common"
                 <p class="text-gray-600">info@angularapp.com</p>
               </div>
             </div>
-            
+
             <div class="flex items-start">
               <div class="text-blue-500 mr-3">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

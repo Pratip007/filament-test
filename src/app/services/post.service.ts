@@ -7,7 +7,7 @@ export class PostService {
   private posts = [
     {
       id: "1",
-      image: "/placeholder.svg?height=40&width=40",
+      image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       title: "Quos eaque et sequi aspernatur ad.",
       author: "Otha Dicki",
       status: "draft" as const,
@@ -16,7 +16,7 @@ export class PostService {
     },
     {
       id: "2",
-      image: "/placeholder.svg?height=40&width=40",
+      image: "https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       title: "Necessitatibus saepe laudantium eum impedit.",
       author: "Otha Dicki",
       status: "published" as const,
@@ -25,7 +25,7 @@ export class PostService {
     },
     {
       id: "3",
-      image: "/placeholder.svg?height=40&width=40",
+      image: "https://images.pexels.com/photos/5473302/pexels-photo-5473302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       title: "Eum quae dolore.",
       author: "Otha Dicki",
       status: "published" as const,
@@ -34,7 +34,7 @@ export class PostService {
     },
     {
       id: "4",
-      image: "/placeholder.svg?height=40&width=40",
+      image: "https://images.pexels.com/photos/4050296/pexels-photo-4050296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       title: "Quae sequi quia et illum.",
       author: "Otha Dicki",
       status: "draft" as const,
@@ -43,7 +43,7 @@ export class PostService {
     },
     {
       id: "5",
-      image: "/placeholder.svg?height=40&width=40",
+      image: "https://images.pexels.com/photos/4050334/pexels-photo-4050334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       title: "Itaque cumque dolor earum.",
       author: "Otha Dicki",
       status: "published" as const,
@@ -52,7 +52,7 @@ export class PostService {
     },
     {
       id: "6",
-      image: "/placeholder.svg?height=40&width=40",
+      image: "https://images.pexels.com/photos/4050437/pexels-photo-4050437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       title: "Adipisci laboriosam delectus voluptas alias incidunt.",
       author: "Camila Schinner DVM",
       status: "published" as const,

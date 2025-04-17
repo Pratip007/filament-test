@@ -7,7 +7,7 @@ export class ProductService {
   private products = [
     {
       id: "1",
-      image: "/placeholder.svg?height=40&width=40",
+      image: "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Distributed scalable systemengine",
       brand: "Buckridge and Sons",
       visible: true,
@@ -16,7 +16,7 @@ export class ProductService {
     },
     {
       id: "2",
-      image: "/placeholder.svg?height=40&width=40",
+      image: "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Managed real-time implementation",
       brand: "Stroman-Daniel",
       visible: true,
@@ -25,7 +25,7 @@ export class ProductService {
     },
     {
       id: "3",
-      image: "/placeholder.svg?height=40&width=40",
+      image: "https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Organic 6thgeneration flexibility",
       brand: "Champlin Inc",
       visible: false,
@@ -34,7 +34,7 @@ export class ProductService {
     },
     {
       id: "4",
-      image: "/placeholder.svg?height=40&width=40",
+      image: "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Balanced eco-centric encoding",
       brand: "Fadel Group",
       visible: true,
@@ -43,7 +43,7 @@ export class ProductService {
     },
     {
       id: "5",
-      image: "/placeholder.svg?height=40&width=40",
+      image: "https://images.pexels.com/photos/341523/pexels-photo-341523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Multi-layered full-range functionalities",
       brand: "Effertz-Larkin",
       visible: true,
@@ -52,7 +52,7 @@ export class ProductService {
     },
     {
       id: "6",
-      image: "/placeholder.svg?height=40&width=40",
+      image: "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Cross-platform mobile flexibility",
       brand: "Hegmann, Hand and Kulas",
       visible: false,

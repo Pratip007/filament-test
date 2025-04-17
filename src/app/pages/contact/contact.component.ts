@@ -1,5 +1,5 @@
 import { Component } from "@angular/core"
-import { type FormBuilder, type FormGroup, ReactiveFormsModule, Validators } from "@angular/forms"
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from "@angular/forms"
 import { CommonModule } from "@angular/common"
 
 @Component({
@@ -20,10 +20,10 @@ import { CommonModule } from "@angular/common"
                 id="name"
                 formControlName="name"
                 class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                [ngClass]="{'border-red-500': submitted && f.name.errors}"
+                [ngClass]="{'border-red-500': submitted && f['name'].errors}"
               >
-              <div *ngIf="submitted && f.name.errors" class="text-red-500 mt-1">
-                <div *ngIf="f.name.errors.required">Name is required</div>
+              <div *ngIf="submitted && f['name'].errors" class="text-red-500 mt-1">
+                <div *ngIf="f['name'].errors['required']">Name is required</div>
               </div>
             </div>
 
@@ -34,11 +34,11 @@ import { CommonModule } from "@angular/common"
                 id="email"
                 formControlName="email"
                 class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                [ngClass]="{'border-red-500': submitted && f.email.errors}"
+                [ngClass]="{'border-red-500': submitted && f['email'].errors}"
               >
-              <div *ngIf="submitted && f.email.errors" class="text-red-500 mt-1">
-                <div *ngIf="f.email.errors.required">Email is required</div>
-                <div *ngIf="f.email.errors.email">Please enter a valid email address</div>
+              <div *ngIf="submitted && f['email'].errors" class="text-red-500 mt-1">
+                <div *ngIf="f['email'].errors['required']">Email is required</div>
+                <div *ngIf="f['email'].errors['email']">Please enter a valid email address</div>
               </div>
             </div>
 
@@ -49,11 +49,11 @@ import { CommonModule } from "@angular/common"
                 formControlName="message"
                 rows="5"
                 class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                [ngClass]="{'border-red-500': submitted && f.message.errors}"
+                [ngClass]="{'border-red-500': submitted && f['message'].errors}"
               ></textarea>
-              <div *ngIf="submitted && f.message.errors" class="text-red-500 mt-1">
-                <div *ngIf="f.message.errors.required">Message is required</div>
-                <div *ngIf="f.message.errors.minlength">Message must be at least 20 characters</div>
+              <div *ngIf="submitted && f['message'].errors" class="text-red-500 mt-1">
+                <div *ngIf="f['message'].errors['required']">Message is required</div>
+                <div *ngIf="f['message'].errors['minlength']">Message must be at least 20 characters</div>
               </div>
             </div>
 
@@ -99,7 +99,7 @@ import { CommonModule } from "@angular/common"
               </div>
               <div>
                 <p class="font-medium">Email</p>
-                <p class="text-gray-600">info@angularapp.com</p>
+                <p class="text-gray-600">info&#64;angularapp.com</p>
               </div>
             </div>
 

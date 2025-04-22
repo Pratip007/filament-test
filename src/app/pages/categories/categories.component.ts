@@ -5,6 +5,7 @@ import { FormsModule } from "@angular/forms"
 // import type { CategoryService } from "../../services/category.service"
 // to:
 import { CategoryService } from "../../services/category.service"
+import { NewCategoryModalComponent } from "./modals/new-category-modal.component"
 
 interface Category {
   id: string
@@ -17,7 +18,7 @@ interface Category {
 @Component({
   selector: "app-categories",
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, NewCategoryModalComponent],
   template: `
     <div class="sm:p-4 lg:p-6">
       <!-- Title and New Post Button -->
@@ -27,7 +28,9 @@ interface Category {
           <button class="bg-[#242426] hover:bg-gray-600 text-white px-4 py-2 rounded-lg text-sm font-medium w-full sm:w-auto">
             Import categories
           </button>
-          <button class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium w-full sm:w-auto">
+          <button 
+            (click)="showNewCategoryModal = true"
+            class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium w-full sm:w-auto">
             New category
           </button>
         </div>
@@ -160,12 +163,19 @@ interface Category {
           </div>
         </div>
       </div>
+
+      <!-- New Category Modal -->
+      <app-new-category-modal 
+        *ngIf="showNewCategoryModal"
+        (close)="showNewCategoryModal = false">
+      </app-new-category-modal>
     </div>
   `,
   styles: [],
 })
 export class CategoriesComponent implements OnInit {
   categories: Category[] = []
+  showNewCategoryModal = false
 
   constructor(private categoryService: CategoryService) {}
 

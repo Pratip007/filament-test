@@ -26,6 +26,10 @@ export const routes: Routes = [
     loadComponent: () => import("./pages/categories/categories.component").then((m) => m.CategoriesComponent),
   },
   {
+    path: "categories/new",
+    loadComponent: () => import("./pages/categories/new-category.component").then((m) => m.NewCategoryComponent),
+  },
+  {
     path: "authors",
     loadComponent: () => import("./pages/authors/authors.component").then((m) => m.AuthorsComponent),
   },
